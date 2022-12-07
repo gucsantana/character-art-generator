@@ -22,8 +22,8 @@ import os
 import time
 
 # ------------- CONSTANTS -------------
-_PATH = 'D:\\Pictures\\Desenhos\\Meus\\PixelArt\\Animad\\files\\'
-_BASEPATH = 'D:\\Pictures\\Desenhos\\Meus\\PixelArt\\Animad\\'
+_PATH = 'yourfilepath\\files\\'
+_BASEPATH = 'yourfilepath'
 _TOTALIMGS = 100
 _SEGMENTEDRUN = True
 
@@ -240,10 +240,6 @@ while(curImg < (_TOTALIMGS + previousCount)):
     choiceToplayer = SelectElement(population=popToplayer, weights=wghtToplayer, addToBanList=False)
     if(choiceToplayer != "none"):
         curImgHash = PasteImage(choiceToplayer,"top layer effects",curImgHash)
-        
-    # not for sale overlay - remove for full print
-    # imgNotForSale = Image.open(_PATH + "notforsale.png")
-    # img.paste(imgNotForSale, (0,0), imgNotForSale)
     
     # final checks and generation
     if(curImgHash not in generatedImgHashes):
