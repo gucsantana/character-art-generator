@@ -22,9 +22,11 @@ import os
 import time
 
 # ------------- CONSTANTS -------------
-_PATH = 'yourfilepath\\files\\'
-_BASEPATH = 'yourfilepath'
-_TOTALIMGS = 100
+_PATH = 'C:\\Users\\Gulcasa\\Documents\\GitHub\\character-art-generator\\files\\'
+#_PATH = 'yourfilepath\\files\\'
+#_BASEPATH = 'yourfilepath'
+_BASEPATH = 'C:\\Users\\Gulcasa\\Documents\\GitHub\\character-art-generator\\'
+_TOTALIMGS = 10
 _SEGMENTEDRUN = True
 
 _FACEDECORCHANCEA = 0.8
